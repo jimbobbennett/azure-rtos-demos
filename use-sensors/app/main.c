@@ -19,7 +19,7 @@ static void telemetry_timer_callback(ULONG parameter)
     float temp_c = lps22hb_data.temperature_degC;
 
     char buff[11];
-    sprintf(buff, "Temp %dC", (int)temp_c);
+    sprintf(buff, "Temp: %dC", (int)temp_c);
 
     screen_print(buff, 16);
 }
