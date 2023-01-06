@@ -15,6 +15,7 @@ typedef enum
 #define WIFI_SSID     ""
 #define WIFI_PASSWORD ""
 #define WIFI_MODE     WPA2_PSK_AES
+
 #define IOT_HUB_HOSTNAME  ""
 #define IOT_HUB_DEVICE_ID ""
 #define IOT_DEVICE_SAS_KEY ""

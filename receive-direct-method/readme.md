@@ -1,4 +1,4 @@
-# Send data to Azure Iot Hub from an MXChip
+# Receive a direct method request from Azure Iot Hub using an MXChip
 
 ## What you need
 
@@ -16,7 +16,7 @@
     \tools\get-toolchain.bat
     ```
 
-1. Set the WiFi and IoT Hub details in the `send-data-iot-hub\app\azure_config.h` header file:
+1. Set the WiFi and IoT Hub details in the `receive-direct-method\app\azure_config.h` header file:
 
     ```cpp
     #define WIFI_SSID     ""
@@ -29,11 +29,11 @@
 1. Build the binary image:
 
     ```cmd
-    send-data-iot-hub\tools\rebuild.bat
+    receive-direct-method\tools\rebuild.bat
     ```
 
 1. Flash the image to the device by copying the image file to the **AZ3166** drive:
 
-    **send-data-iot-hub\build\app\mxchip_azure_iot.bin**
+    **receive-direct-method\build\app\mxchip_azure_iot.bin**
 
 1. Configure a serial port app at baud rate **115,200** to monitor the device output.

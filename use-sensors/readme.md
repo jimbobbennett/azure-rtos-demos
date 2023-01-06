@@ -23,4 +23,3 @@
 
     **use-sensors\build\app\mxchip_azure_iot.bin**
 
-1. Configure a serial port app at baud rate **115,200** to monitor the device output.

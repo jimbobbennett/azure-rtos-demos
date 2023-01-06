@@ -6,18 +6,15 @@ These were taken from the [Azure RTOS getting started repository](https://github
 
 ## Demos
 
-### Use sensors
+### [Use sensors](./use-sensors/)
 
 This demo shows how to use the sensors on the board.
 
-### Send data to Azure IoT Hub
+### [Send data to Azure IoT Hub](./send-data-iot-hub/)
 
 This demo shows how to send the sensor data to Azure IoT Hub.
 
-### Receive direct messages from Azure IoT Hub
+### [Receive direct method requests from Azure IoT Hub](./receive-direct-method/)
 
 This demo shows how to receive direct method requests from Azure IoT Hub
 
-### Azure DPS
-
-This demo shows how to use the Azure IoT Hub Device Provisioning Service to provision the device.
