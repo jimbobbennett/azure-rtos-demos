@@ -86,14 +86,17 @@ static void command_received_cb(AZURE_IOT_NX_CONTEXT* nx_context_ptr,
     {
         printf("Direct method is not for this device\r\n");
 
+        char *msg = "{\"error\":\"Direct method is not for this device\"}";
+
         if ((status = nx_azure_iot_hub_client_command_message_response(
-                 &nx_context_ptr->iothub_client, 501, context_ptr, context_length, NULL, 0, NX_WAIT_FOREVER)))
+                 &nx_context_ptr->iothub_client, 501, context_ptr, context_length, (const UCHAR *)msg, strlen(msg), NX_WAIT_FOREVER)))
         {
             printf("Direct method response failed! (0x%08x)\r\n", status);
             return;
         }
     }
 }
+
 UINT azure_iot_nx_client_entry(
     NX_IP* ip_ptr, NX_PACKET_POOL* pool_ptr, NX_DNS* dns_ptr, UINT (*unix_time_callback)(ULONG* unix_time))
 {
